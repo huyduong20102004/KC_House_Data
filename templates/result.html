@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Results</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Prediction Results</h1>
+        </header>
+        <p>The predicted house price is: ${{ price }}</p>
+        {% if recommendation == "buy" %}
+            <p>Based on the predicted price, you should consider buying the house.</p>
+        {% elif recommendation == "sell" %}
+            <p>Based on the predicted price, you should consider selling the house.</p>
+        {% elif recommendation == "no recommendation" %}
+            <p>No recommendation for this transaction.</p>
+        {% endif %}
+        <a href="/">Go back</a>
+    </div>
+</body>
+</html>

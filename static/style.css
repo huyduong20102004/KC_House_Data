@@ -1,0 +1,108 @@
+body {
+    background-image: url("/static/logo1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: crisp-edges; /* Tùy chọn để cải thiện độ sắc nét */
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    max-width: 800px;
+    margin: 100px auto;
+}
+
+header {
+    margin-bottom: 1.5rem; /* Khoảng cách giữa header và nội dung chính */
+}
+
+.logo {
+    width: 100px; /* Thay đổi kích thước logo */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Căn giữa logo */
+}
+
+h1 {
+    color: blue;
+    font-weight: bolder;
+}
+
+p {
+    font-size: 1.2rem; /* Thay đổi kích thước chữ trong đoạn văn */
+}
+
+a.back-button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: white;
+    background-color: blue;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+a.back-button:hover {
+    background-color: darkblue;
+}
+
+.btn {
+    background-color: red;
+    color: white;
+    font-weight: bolder;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: darkred;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.form-group {
+    margin: 1rem 0;
+    text-align: center; /* Căn giữa nội dung trong form-group */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    text-align: center; /* Căn giữa label */
+}
+
+.form-group input,
+.form-group select {
+    width: 95%; /* Điều chỉnh chiều rộng của input */
+    padding: 0.75rem; /* Điều chỉnh khoảng cách bên trong của input */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Đảm bảo padding và border không làm thay đổi chiều rộng */
+    margin: 0 auto; /* Căn giữa select */
+    display: block; /* Hiển thị dưới dạng block để căn giữa */
+}
+
+.form-group select option {
+    font-size: 1.5rem; /* Thay đổi kích thước chữ trong option */
+}
+
+.form-row .form-group {
+    flex: 1;
+    margin: 0 0.5rem;
+}
+
+.form-group input {
+    height: 2.5rem; /* Điều chỉnh chiều cao của input */
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>House Price Prediction</h1>
+        <form action="/predict" method="POST">
+            <div class="form-group">
+                <label for="transaction_type">Transaction Type</label>
+                <select name="transaction_type" id="transaction_type" required>
+                    <option value="buy">Predict Buying Price</option>
+                    <option value="sell">Predict Selling Price</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="floors">Number of Floors</label>
+                    <input type="number" name="floors" id="floors" min="1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="waterfront">Waterfront View (1: Yes, 0: No)</label>
+                    <input type="number" name="waterfront" id="waterfront" min="0" max="1" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="bedrooms">Number of Bedrooms</label>
+                    <input type="number" name="bedrooms" id="bedrooms" min="1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="view">View Rating</label>
+                    <input type="number" name="view" id="view" min="0" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="bathrooms">Number of Bathrooms</label>
+                    <input type="number" step="any" name="bathrooms" id="bathrooms" min="1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="sqft_above">Above Ground Square Footage (m²)</label>
+                    <input type="number" step="any" name="sqft_above" id="sqft_above" min="0" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="grade">Quality Rating</label>
+                    <input type="number" name="grade" id="grade" min="0" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="sqft_living">Living Area Square Footage (m²)</label>
+                    <input type="number" step="any" name="sqft_living" id="sqft_living" min="0" required>
+                </div>
+            </div>
+
+            <button type="submit" class="btn">Predict</button>
+        </form>
+    </div>
+</body>
+</html>
