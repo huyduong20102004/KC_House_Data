@@ -24,4 +24,4 @@
 | 19     | long            | Kinh độ                                                                |
 | 20     | sqft_living15   | Diện tích sống trung bình của 15 căn nhà gần nhất (tính bằng square feet)|
 | 21     | sqft_lot15      | Diện tích lô đất trung bình của 15 căn nhà gần nhất (tính bằng square feet)|
-# KC_House_Data
+
