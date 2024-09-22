@@ -1,7 +1,7 @@
 # KC_House_Data
 
 ## Data description
-| Number | Column Name     | Ý nghĩa                                                                 |
+| Column Number | Column Name     | Ý nghĩa                                                                 |
 |--------|-----------------|-------------------------------------------------------------------------|
 | 1      | id              | Mã định danh duy nhất cho mỗi căn nhà                                   |
 | 2      | date            | Ngày bán nhà                                                            |
